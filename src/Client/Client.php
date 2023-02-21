@@ -31,7 +31,7 @@ class Client
      * Generate a Piano user access token by email
      *
      * @param string $email
-     * @return mixed|string
+     * @return bool|string
      * @throws \Exception
      */
     public function generateToken(string $email)
@@ -48,6 +48,10 @@ class Client
         );
     }
 
+    /**
+     * @param string $accessToken
+     * @return bool|string
+     */
     public function logout(string $accessToken)
     {
         $url = sprintf('%s%s', $this->baseUrl, '/piano/logout');
