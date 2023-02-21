@@ -17,6 +17,5 @@
         "psr-4": {
             "LeDevoir\\PianoAuthSDK\\": "src/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
